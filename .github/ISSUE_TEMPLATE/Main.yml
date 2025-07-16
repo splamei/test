@@ -30,8 +30,9 @@ body:
   - type: dropdown
     id: platform
     attributes:
-      label: What device are you using for SplameiPlay?
-      description: What type of device was used when you first got the bug?
+      label: What device(s) did the issue occur on?
+      description: When using SplameiPlay, what device(s) have you managed to get the issue to occur on?
+      multiple: true
       options:
         - Laptop
         - Dektop PC
@@ -43,6 +44,7 @@ body:
     id: osVersion
     attributes:
       label: What OS version(s) did the bug occur on?
+      description: What different OS versions or software have you been able to get the issue to occur on?
       multiple: true
       options:
         - Windows 10 or 11
