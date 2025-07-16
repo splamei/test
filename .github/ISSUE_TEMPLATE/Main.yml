@@ -19,8 +19,9 @@ body:
   - type: dropdown
     id: version
     attributes:
-      label: Version
-      description: What version of SplameiPlay were you using?
+      label: Affected version(s)
+      description: What versions and groups of SplameiPlay did you get the issue to occur on?
+      multiple: true
       options:
         - 4.x Bloom
         - 3.x Albedo
@@ -30,7 +31,7 @@ body:
   - type: dropdown
     id: platform
     attributes:
-      label: What device(s) did the issue occur on?
+      label: Affected device(s)
       description: When using SplameiPlay, what device(s) have you managed to get the issue to occur on?
       multiple: true
       options:
@@ -43,7 +44,7 @@ body:
   - type: dropdown
     id: osVersion
     attributes:
-      label: What OS version(s) did the bug occur on?
+      label: Affected OS(es)
       description: What different OS versions or software have you been able to get the issue to occur on?
       multiple: true
       options:
