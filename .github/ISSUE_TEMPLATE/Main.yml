@@ -39,7 +39,7 @@ body:
         - Emulated/Translated Hardware
     validations:
       required: true
-    - type: dropdown
+  - type: dropdown
     id: osVersion
     attributes:
       label: What OS version(s) did the bug occur on?
