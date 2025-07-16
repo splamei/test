@@ -1,6 +1,6 @@
 name: Feature Request
 description: Request a wanted feature
-title: "Secutiry: "
+title: "Feature: "
 labels: ["bug"]
 body:
   - type: markdown
