@@ -1,0 +1,77 @@
+name: Secirty Report
+description: Report a major issue
+title: "Secutiry: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping make SplameiPlay better for everyone!
+  - type: textarea
+    id: description
+    attributes:
+      label: What's the issue?
+      description: What is the issue happing in SplameiPlay and how does it affectr secituty?
+      placeholder: What went wrong and how does it affect secutiry
+      value: "Some bug description"
+    validations:
+      required: true
+  - type: checkboxes
+    id: zeroClick
+    attributes:
+      label: Executed without user input?
+      description: Check if the issue can be triggered without the user needing to do anything
+      options:
+        - label: This can be triggered without user input
+  - type: dropdown
+    id: version
+    attributes:
+      label: Affected version(s)
+      description: What versions and groups of SplameiPlay did you get the issue to occur on?
+      multiple: true
+      options:
+        - 4.x Bloom
+        - 3.x Albedo
+      default: 0
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Affected device(s)
+      description: When using SplameiPlay, what device(s) have you managed to get the issue to occur on?
+      multiple: true
+      options:
+        - Laptop
+        - Dektop PC
+        - Mini PC
+        - Emulated/Translated Hardware
+    validations:
+      required: true
+  - type: dropdown
+    id: osVersion
+    attributes:
+      label: Affected OS(es)
+      description: What different OS versions or software have you been able to get the issue to occur on?
+      multiple: true
+      options:
+        - Windows 10 or 11
+        - Pre Windows 10 (i.e 8.x + 7)
+        - Wine (or simular app)
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: debugLog
+    attributes:
+      label: SplameiPlay Log file
+      description: Copy and paste the contents of the log file of SplameiPlay found in your AppData Roaming file. This will always be formatted as code so you dont need backticks.
+      render: shell
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: Once you submit this issue, you agree to our [Code of Conduct](https://github.com/splamei/test/blob/main/CODE_OF_CONDUCT.md). 
+      options:
+        - label: I agree to the code of conduct
+          required: true
