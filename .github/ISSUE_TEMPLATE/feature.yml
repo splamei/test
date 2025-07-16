@@ -23,6 +23,7 @@ body:
       description: Is this a major feature idea?
       options:
         - label: This is a major feature idea
+  - type: checkboxes
     id: terms
     attributes:
       label: Code of Conduct
