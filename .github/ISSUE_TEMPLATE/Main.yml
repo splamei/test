@@ -13,7 +13,7 @@ body:
       label: What went wrong?
       description: Please describe what went wrong with SplameiPlay and what was meant to happen
       placeholder: What went wrong and what has meant to happen
-      value: ""
+      value: "Some bug description"
     validations:
       required: true
   - type: dropdown
