@@ -17,6 +17,18 @@ body:
     validations:
       required: true
   - type: dropdown
+    id: type
+    attributes:
+      label: Type of issue
+      description: What type of issue is this bug?
+      options:
+        - Minor issue (SplameiPlay keeps running)
+        - Temp Major issue (SplameiPlay stops running for a bit)
+        - Perm Major issue (SplameiPlay stops running permenetly)
+      default: 0
+    validations:
+      required: true
+  - type: dropdown
     id: version
     attributes:
       label: Affected version(s)
