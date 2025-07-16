@@ -24,7 +24,7 @@ body:
       options:
         - Minor issue (SplameiPlay keeps running)
         - Temp Major issue (SplameiPlay stops running for a bit)
-        - Perm Major issue (SplameiPlay stops running permenetly)
+        - Major issue (SplameiPlay stops running permenetly)
       default: 0
     validations:
       required: true
